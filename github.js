@@ -3,6 +3,10 @@
 // Set config
 global.CONFIG = {
     root: __dirname
+  , cli: {
+        w: process.stdout.columns || 212
+      , h: process.stdout.rows || 56
+    }
 }
 
 // Dependencies
