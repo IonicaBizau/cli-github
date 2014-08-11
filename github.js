@@ -1,5 +1,7 @@
 #!/usr/bin/env node
 
+var conf = require("./config");
+
 // Set config
 global.CONFIG = {
     root: __dirname
@@ -9,10 +11,16 @@ global.CONFIG = {
     }
 }
 
-// Dependencies
-var SplashScreen = require("./lib/splash-screen");
+for (var key in conf) {
+    CONFIG[key] = conf[key];
+}
 
-SplashScreen.show();
-setTimeout(function() {
-    //SplashScreen.hide();
-}, 1000);
+// Dependencies
+var SplashScreen = require("./lib/splash-screen")
+  , MainStream = require("./lib/stream")
+  ;
+
+//SplashScreen.show();
+//setTimeout(function() {
+//    //SplashScreen.hide();
+//}, 1000);
