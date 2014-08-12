@@ -7,7 +7,10 @@ var conf = require("./config")
         timeout: 5000
     })
   , Login = require("./lib/api/login")
+  , Keypress = require("keypress")
   ;
+
+Keypress(process.stdin);
 
 // Set config
 global.CONFIG = {
@@ -17,6 +20,7 @@ global.CONFIG = {
       , h: process.stdout.rows || 56
     }
   , _github: GitHub
+  , frameHandlers: require("./lib/frame-handlers")
 };
 CONFIG.background = new Box({
     w: CONFIG.cli.w
@@ -61,3 +65,18 @@ SplashScreen.show(function (err, output) {
         }, 1000);
     });
 });
+
+// listen for the "keypress" event
+process.stdin.on("keypress", function (ch, key) {
+    var handlers = CONFIG.frameHandlers[CONFIG.currentFrame] || {};
+    if (key && key.shift && typeof handlers[key.name.toUpperCase()] === "function") {
+        handlers[key.name.toUpperCase()]();
+    }
+
+    if (key && key.name === "c" && key.ctrl) {
+        process.exit();
+    }
+});
+
+process.stdin.setRawMode(true);
+process.stdin.resume();
