@@ -33,11 +33,12 @@ for (var key in conf) {
 }
 
 // Dependencies
-var SplashScreen = require("./lib/splash-screen")
-  , MainStream = require("./lib/stream")
+var SplashScreen = require("./lib/ui/splash-screen")
+  , MainStream = require("./lib/ui/stream")
   ;
 
-//SplashScreen.show();
-//setTimeout(function() {
-//    //SplashScreen.hide();
-//}, 1000);
+
+SplashScreen.show();
+setTimeout(function() {
+    MainStream();
+}, 1000);
