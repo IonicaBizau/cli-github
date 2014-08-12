@@ -24,6 +24,7 @@ global.CONFIG = {
   , cache: {
         avatars: {}
     }
+  , promptRunning: false
 };
 CONFIG.frameHandlers = require("./lib/frame-handlers");
 CONFIG.background = new Box({
@@ -72,6 +73,12 @@ SplashScreen.show(function (err, output) {
 
 // listen for the "keypress" event
 process.stdin.on("keypress", function (ch, key) {
+    if (key && key.name === "c" && key.ctrl) {
+        process.exit();
+    }
+    if (CONFIG.promptRunning) {
+        return;
+    }
     var handlers = CONFIG.frameHandlers[CONFIG.currentFrame] || {};
     if (key && key.shift && typeof handlers[key.name.toUpperCase()] === "function") {
         handlers[key.name.toUpperCase()]();
@@ -85,9 +92,6 @@ process.stdin.on("keypress", function (ch, key) {
         CONFIG.cli.update.back();
     }
 
-    if (key && key.name === "c" && key.ctrl) {
-        process.exit();
-    }
 });
 
 try {
