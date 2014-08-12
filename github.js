@@ -8,6 +8,7 @@ var conf = require("./config")
     })
   , Login = require("./lib/api/login")
   , Keypress = require("keypress")
+  , CliUpdate = require("cli-update")
   ;
 
 Keypress(process.stdin);
@@ -18,6 +19,7 @@ global.CONFIG = {
   , cli: {
         w: process.stdout.columns || 212
       , h: process.stdout.rows || 56
+      , update: CliUpdate
     }
   , _github: GitHub
   , cache: {
@@ -74,6 +76,14 @@ process.stdin.on("keypress", function (ch, key) {
     var handlers = CONFIG.frameHandlers[CONFIG.currentFrame] || {};
     if (key && key.shift && typeof handlers[key.name.toUpperCase()] === "function") {
         handlers[key.name.toUpperCase()]();
+    }
+
+    if (key && key.shift && key.name === "left") {
+        CONFIG.cli.update.back();
+    }
+
+    if (key && key.shift && key.name === "right") {
+        CONFIG.cli.update.back();
     }
 
     if (key && key.name === "c" && key.ctrl) {
