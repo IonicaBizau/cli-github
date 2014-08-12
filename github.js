@@ -4,14 +4,10 @@ var conf = require("./config")
   , Box = require("cli-box")
   , GitHub = new (require("github"))({
         version: "3.0.0",
-        debug: true,
         timeout: 5000
     })
   , Login = require("./lib/api/login")
   ;
-
-  debugger;
-console.log(process.env.NODE_DEBUG);
 
 // Set config
 global.CONFIG = {
