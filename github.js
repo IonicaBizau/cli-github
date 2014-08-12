@@ -20,8 +20,11 @@ global.CONFIG = {
       , h: process.stdout.rows || 56
     }
   , _github: GitHub
-  , frameHandlers: require("./lib/frame-handlers")
+  , cache: {
+        avatars: {}
+    }
 };
+CONFIG.frameHandlers = require("./lib/frame-handlers");
 CONFIG.background = new Box({
     w: CONFIG.cli.w
   , h: CONFIG.cli.h - 3
@@ -78,5 +81,7 @@ process.stdin.on("keypress", function (ch, key) {
     }
 });
 
+try {
 process.stdin.setRawMode(true);
 process.stdin.resume();
+} catch (e) {}
