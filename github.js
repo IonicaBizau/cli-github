@@ -3,8 +3,7 @@
 var conf = require("./config")
   , Box = require("cli-box")
   , GitHub = new (require("github"))({
-        version: "3.0.0",
-        timeout: 5000
+        version: "3.0.0"
     })
   , Login = require("./lib/api/login")
   , Keypress = require("keypress")
