@@ -52,7 +52,7 @@ global.CONFIG = {
   , promptRunning: false
   , prompt: Prompt
   , HOMDE_DIR: HOME_DIRECTORY
-  , CONFIG_PATH: HOME_DIRECTORY + "/.github-config"
+  , CONFIG_PATH: HOME_DIRECTORY + "/.github-config.json"
 };
 CONFIG.frameHandlers = require("./lib/frame-handlers");
 CONFIG.background = new Box({
