@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 
-var conf = require("./config")
-  , Box = require("cli-box")
+var Box = require("cli-box")
   , GitHub = new (require("github"))({
         version: "3.0.0"
     })
@@ -34,6 +33,10 @@ CliUpdate.changed = function (output) {
     CONFIG.cache._currentScreen = output;
 };
 
+const HOME_DIRECTORY = process.env[
+    process.platform == "win32" ? "USERPROFILE" : "HOME"
+];
+
 // Set config
 global.CONFIG = {
     root: __dirname
@@ -48,6 +51,8 @@ global.CONFIG = {
     }
   , promptRunning: false
   , prompt: Prompt
+  , HOMDE_DIR: HOME_DIRECTORY
+  , CONFIG_PATH: HOME_DIRECTORY + "/.github-config"
 };
 CONFIG.frameHandlers = require("./lib/frame-handlers");
 CONFIG.background = new Box({
@@ -66,6 +71,7 @@ CONFIG.background = new Box({
     }
 });
 
+var conf = require(CONFIG.CONFIG_PATH);
 for (var key in conf) {
     CONFIG[key] = conf[key];
 }
