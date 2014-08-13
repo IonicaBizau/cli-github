@@ -12,8 +12,11 @@ var conf = require("./config")
 
 Keypress(process.stdin);
 CliUpdate.navigation = function (data) {
-    console.log(data);
     data && data.currentFrame && (CONFIG.currentFrame = data.currentFrame);
+};
+
+CliUpdate.changed = function (output) {
+    CONFIG.cache._currentScreen = output;
 };
 
 // Set config
@@ -77,11 +80,11 @@ SplashScreen.show(function (err, output) {
 
 // listen for the "keypress" event
 process.stdin.on("keypress", function (ch, key) {
-    if (key && key.name === "c" && key.ctrl) {
-        process.exit();
-    }
     if (CONFIG.promptRunning) {
         return;
+    }
+    if (key && key.name === "c" && key.ctrl) {
+        process.exit();
     }
     var handlers = CONFIG.frameHandlers[CONFIG.currentFrame] || {};
     if (key && key.shift && typeof handlers[key.name.toUpperCase()] === "function") {
@@ -93,7 +96,7 @@ process.stdin.on("keypress", function (ch, key) {
     }
 
     if (key && key.shift && key.name === "right") {
-        CONFIG.cli.update.back();
+        CONFIG.cli.update.next();
     }
 });
 
