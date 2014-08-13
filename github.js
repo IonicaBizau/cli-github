@@ -80,7 +80,12 @@ SplashScreen.show(function (err, output) {
     SplashScreen.updateMessage("Logging in ...");
     Login(function (err, user) {
         if (err) {
-            SplashScreen.updateMessage("Failed to login in: " + JSON.parse(err.message).message);
+            try {
+                var error = JSON.parse(err.message).message;
+            } catch (e) {
+                error = err.toString();
+            }
+            SplashScreen.updateMessage("Failed to login in: " + error);
             return setTimeout(function () {
                 process.exit();
             }, 1000);
