@@ -8,7 +8,22 @@ var conf = require("./config")
   , Login = require("./lib/api/login")
   , Keypress = require("keypress")
   , CliUpdate = require("cli-update")
+  , Prompt = require("prompt")
   ;
+
+Prompt.start();
+Prompt.message = "";
+Prompt.delimiter = "";
+Prompt.colors = false;
+
+var oldGet = Prompt.get;
+Prompt.get = function (schema, callback) {
+    oldGet.call(this, schema, function () {
+        process.stdin.setRawMode(true);
+        process.stdin.resume();
+        callback.apply(this, arguments);
+    });
+};
 
 Keypress(process.stdin);
 CliUpdate.navigation = function (data) {
@@ -32,6 +47,7 @@ global.CONFIG = {
         avatars: {}
     }
   , promptRunning: false
+  , prompt: Prompt
 };
 CONFIG.frameHandlers = require("./lib/frame-handlers");
 CONFIG.background = new Box({
