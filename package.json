@@ -20,7 +20,8 @@
     "image-to-ascii": "^0.1.1",
     "request": "^2.40.0",
     "xml2js": "^0.4.4",
-    "keypress": "0.2.1"
+    "keypress": "0.2.1",
+    "prompt": "0.2.13"
   },
   "devDependencies": {}
 }
