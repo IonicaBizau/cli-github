@@ -11,6 +11,10 @@ var conf = require("./config")
   ;
 
 Keypress(process.stdin);
+CliUpdate.navigation = function (data) {
+    console.log(data);
+    data && data.currentFrame && (CONFIG.currentFrame = data.currentFrame);
+};
 
 // Set config
 global.CONFIG = {
@@ -91,7 +95,6 @@ process.stdin.on("keypress", function (ch, key) {
     if (key && key.shift && key.name === "right") {
         CONFIG.cli.update.back();
     }
-
 });
 
 try {
