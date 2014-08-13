@@ -6,6 +6,17 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "Ionică Bizău <bizauionica@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "cli-update": "^0.0.1",
+    "cli-box": "^1.0.1",
+    "github": "^0.2.1",
+    "le-table": "^1.0.1",
+    "overlap": "^0.1.0",
+    "image-to-ascii": "^0.1.1",
+    "request": "^2.40.0",
+    "xml2js": "^0.4.4"
+  },
+  "devDependencies": {}
 }
