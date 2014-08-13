@@ -71,7 +71,11 @@ CONFIG.background = new Box({
     }
 });
 
+try {
 var conf = require(CONFIG.CONFIG_PATH);
+} catch (e) {
+    conf = {};
+}
 for (var key in conf) {
     CONFIG[key] = conf[key];
 }
