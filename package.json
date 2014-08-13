@@ -21,7 +21,8 @@
     "request": "^2.40.0",
     "xml2js": "^0.4.4",
     "keypress": "0.2.1",
-    "prompt": "0.2.13"
+    "prompt": "0.2.13",
+    "moment": "2.8.1"
   },
   "devDependencies": {}
 }
