@@ -4,7 +4,7 @@
   "description": "A fancy GitHub client for command line.",
   "main": "github.js",
   "bin": {
-    "github": "./github"
+    "github": "node github.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
