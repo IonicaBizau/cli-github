@@ -3,8 +3,9 @@
   "version": "1.0.0-beta6",
   "description": "A fancy GitHub client for command line.",
   "main": "github.js",
+  "preferGlobal": "true",
   "bin": {
-    "github": "./bin/github"
+    "github": "node bin/github.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 // Dependencies
 var Box = require("cli-box")
   , GitHub = new (require("github"))({
