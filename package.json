@@ -1,11 +1,11 @@
 {
   "name": "cli-github",
-  "version": "1.0.0-beta7",
+  "version": "1.0.0-beta8",
   "description": "A fancy GitHub client for command line.",
   "main": "github.js",
   "preferGlobal": "true",
   "bin": {
-    "github": "node bin/github.js"
+    "github": "/bin/github.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
