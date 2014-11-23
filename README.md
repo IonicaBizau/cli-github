@@ -4,7 +4,7 @@ A fancy GitHub client for command line.
 ## Installation
 
 ```sh
-$ npm install -g cli-github
+$ npm install -g cli-github@1.0.0-beta3
 ```
 
 ## Usage
