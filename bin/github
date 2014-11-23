@@ -5,10 +5,11 @@ var Box = require("cli-box")
   , GitHub = new (require("github"))({
         version: "3.0.0"
     })
-  , Login = require("./lib/api/login")
+  , Login = require("../lib/api/login")
   , Keypress = require("keypress")
   , CliUpdate = require("cli-update")
   , Prompt = require("prompt")
+  , Path = require("path")
   ;
 
 // Conigure prompt
@@ -44,7 +45,7 @@ const HOME_DIRECTORY = process.env[
 
 // Set config
 global.CONFIG = {
-    root: __dirname
+    root: Path.resolve(__dirname, "..")
   , cli: {
         w: process.stdout.columns || 212
       , h: process.stdout.rows || 56
@@ -61,7 +62,7 @@ global.CONFIG = {
 };
 
 // Initialize frame handlers
-CONFIG.frameHandlers = require("./lib/frame-handlers");
+CONFIG.frameHandlers = require("../lib/frame-handlers");
 
 // Set background box
 CONFIG.background = new Box({
@@ -90,8 +91,8 @@ for (var key in conf) {
 }
 
 // Initialize UI
-var SplashScreen = require("./lib/ui/splash-screen")
-  , MainStream = require("./lib/ui/stream")
+var SplashScreen = require("../lib/ui/splash-screen")
+  , MainStream = require("../lib/ui/stream")
   ;
 
 // Show splashscreen
