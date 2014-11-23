@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 
+// Dependencies
 var Box = require("cli-box")
   , GitHub = new (require("github"))({
         version: "3.0.0"
@@ -10,11 +11,14 @@ var Box = require("cli-box")
   , Prompt = require("prompt")
   ;
 
+// Conigure prompt
 Prompt.start();
 Prompt.message = "";
 Prompt.delimiter = "";
 Prompt.colors = false;
+Keypress(process.stdin);
 
+// Override get method
 var oldGet = Prompt.get;
 Prompt.get = function (schema, callback) {
     oldGet.call(this, schema, function () {
@@ -24,7 +28,7 @@ Prompt.get = function (schema, callback) {
     });
 };
 
-Keypress(process.stdin);
+// Configure CLI Update
 CliUpdate.navigation = function (data) {
     data && data.currentFrame && (CONFIG.currentFrame = data.currentFrame);
 };
@@ -33,6 +37,7 @@ CliUpdate.changed = function (output) {
     CONFIG.cache._currentScreen = output;
 };
 
+// Constants
 const HOME_DIRECTORY = process.env[
     process.platform == "win32" ? "USERPROFILE" : "HOME"
 ];
@@ -54,7 +59,11 @@ global.CONFIG = {
   , HOMDE_DIR: HOME_DIRECTORY
   , CONFIG_PATH: HOME_DIRECTORY + "/.github-config.json"
 };
+
+// Initialize frame handlers
 CONFIG.frameHandlers = require("./lib/frame-handlers");
+
+// Set background box
 CONFIG.background = new Box({
     w: CONFIG.cli.w
   , h: CONFIG.cli.h - 3
@@ -80,14 +89,17 @@ for (var key in conf) {
     CONFIG[key] = conf[key];
 }
 
-// Dependencies
+// Initialize UI
 var SplashScreen = require("./lib/ui/splash-screen")
   , MainStream = require("./lib/ui/stream")
   ;
 
+// Show splashscreen
 SplashScreen.show(function (err, output) {
     if (err) { throw err; }
     SplashScreen.updateMessage("Logging in ...");
+
+    // Login user
     Login(function (err, user) {
         if (err) {
             try {
@@ -101,15 +113,12 @@ SplashScreen.show(function (err, output) {
             }, 1000);
         }
         CONFIG.user = user;
-        SplashScreen.updateMessage("Logged in as: " + user.login);
-        setTimeout(function() {
-            SplashScreen.updateMessage("Fetching News Feed ...");
-            MainStream();
-        }, 1000);
+        SplashScreen.updateMessage("Logged in as: " + user.login + ". Fetching News Feed ...");
+        MainStream();
     });
 });
 
-// listen for the "keypress" event
+// Listen for the "keypress" event
 process.stdin.on("keypress", function (ch, key) {
     if (CONFIG.promptRunning) {
         return;
