@@ -1,10 +1,10 @@
 {
-  "name": "ascii-github",
-  "version": "0.0.0-alpha1",
-  "description": "GitHub CLI Client",
-  "main": "index.js",
+  "name": "cli-github",
+  "version": "1.0.0",
+  "description": "A fancy GitHub client for command line.",
+  "main": "github.js",
   "bin": {
-      "github": "./github"
+    "github": "./github"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -25,5 +25,19 @@
     "moment": "2.8.1",
     "couleurs": "1.0.0"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:IonicaBizau/cli-github.git"
+  },
+  "keywords": [
+    "github",
+    "command",
+    "line",
+    "geek"
+  ],
+  "bugs": {
+    "url": "https://github.com/IonicaBizau/cli-github/issues"
+  },
+  "homepage": "https://github.com/IonicaBizau/cli-github"
 }
