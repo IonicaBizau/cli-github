@@ -1,6 +1,18 @@
 # CLI GitHub
 A fancy GitHub client for command line.
 
+## Prerequisites
+
+ - [NodeJS](http://nodejs.org/)
+ - [ImageMagic](http://www.imagemagick.org/)
+
+   ```sh
+   # Ubuntu
+   $ sudo apt-get install imagemagick
+   # Mac OS X
+   $ brew install imagemagick
+   ```
+
 ## Installation
 
 ```sh
