@@ -1,36 +1,36 @@
 ```
-                                CLI GitHub
-                  A fancy GitHub client for command line.
+                                      CLI GitHub
+                        A fancy GitHub client for command line.
 
-                            ..    ..::..    ..
-                          ..  ,,LLCCCCCCLL,,  ..
-                            ,,CCCCCCCCCCCCCC,,
-                            LLCC,,iiiiii,,CCLL
-                          ,,CCCC          CCCC,,
-                          ::CCLL  ......  ffCC::
-                          ,,CCCC    ..    CCCC,,
-                            CCCCLLii  ;;LLCCCC
-                            ;;CCffii  ttCCCC;;
-                          ..  ;;CC11  11CC;;  ..
-                            ..  ....  ....  ..
-
-
+                                  ..    ..::..    ..
+                                ..  ,,LLCCCCCCLL,,  ..
+                                  ,,CCCCCCCCCCCCCC,,
+                                  LLCC,,iiiiii,,CCLL
+                                ,,CCCC          CCCC,,
+                                ::CCLL  ......  ffCC::
+                                ,,CCCC    ..    CCCC,,
+                                  CCCCLLii  ;;LLCCCC
+                                  ;;CCffii  ttCCCC;;
+                                ..  ;;CC11  11CC;;  ..
+                                  ..  ....  ....  ..
 
 
 
 
 
-     :1ffftti,                .:::.    ,:::              :::,
-   tCCCCCCCCCL  fCCf   .... . 1CCC1    LCCC,            ,CCCL .
-  LCCCCLtttfL; .CCCC. ,CCCf . 1CCCt .. CCCC,            ,CCCL
- 1CCCC.         ;ff;  ;CCCL,; 1CCC1    LCCC..;:;.  .;:;.,CCCL,i11;
- LCCC;  ;iiiii, CCCC.CCCCCCCC:iCCCCLLLLCCCC tCCCi  tCCCi.CCCCCCCCCC;
- LCCC:  CCCCCCf CCCC fLCCCCff.1CCCCCCCCCCCC tCCCi  tCCCi.CCCC1itCCCC
- LCCC;  tfLCCCt CCCC  ,CCCL . 1CCCf:;;:CCCC tCCCi  tCCCi.CCCL . LCCC:
- iCCCC.   iCCCt CCCC  :CCCL . 1CCC1    LCCC tCCCi  1CCCi.CCCL . LCCC:
-  LCCCCLffLCCCf CCCC  .CCCCi1 1CCC1 .  CCCC tCCCLi1LCCCi.CCCC1itCCCC
-   1CCCCCCCCCC1 CCCC   tCCCCC;iCCC1    LCCC..CCCCCCCCCCi.CCCCCCCCCC:
-     .;1tt1i:   :;;:    ,i11i..;;;.    :;;;   :1t1i,.;;. ;;:.;111;
+
+
+           :1ffftti,                .:::.    ,:::              :::,
+         tCCCCCCCCCL  fCCf   .... . 1CCC1    LCCC,            ,CCCL .
+        LCCCCLtttfL; .CCCC. ,CCCf . 1CCCt .. CCCC,            ,CCCL
+       1CCCC.         ;ff;  ;CCCL,; 1CCC1    LCCC..;:;.  .;:;.,CCCL,i11;
+       LCCC;  ;iiiii, CCCC.CCCCCCCC:iCCCCLLLLCCCC tCCCi  tCCCi.CCCCCCCCCC;
+       LCCC:  CCCCCCf CCCC fLCCCCff.1CCCCCCCCCCCC tCCCi  tCCCi.CCCC1itCCCC
+       LCCC;  tfLCCCt CCCC  ,CCCL . 1CCCf:;;:CCCC tCCCi  tCCCi.CCCL . LCCC:
+       iCCCC.   iCCCt CCCC  :CCCL . 1CCC1    LCCC tCCCi  1CCCi.CCCL . LCCC:
+        LCCCCLffLCCCf CCCC  .CCCCi1 1CCC1 .  CCCC tCCCLi1LCCCi.CCCC1itCCCC
+         1CCCCCCCCCC1 CCCC   tCCCCC;iCCC1    LCCC..CCCCCCCCCCi.CCCCCCCCCC:
+           .;1tt1i:   :;;:    ,i11i..;;;.    :;;;   :1t1i,.;;. ;;:.;111;
 
 ```
 
