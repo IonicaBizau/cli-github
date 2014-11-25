@@ -49,7 +49,7 @@
 ## Installation
 
 ```sh
-$ npm install -g cli-github@1.0.0
+$ npm install -g cli-github
 ```
 
 ## Usage
