@@ -1,6 +1,6 @@
 {
   "name": "cli-github",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A fancy GitHub client for command line.",
   "main": "github.js",
   "preferGlobal": "true",
@@ -11,7 +11,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Ionică Bizău <bizauionica@gmail.com>",
-  "contributors": [ "Zach Bruggeman <mail@bruggie.com>" ],
+  "contributors": [
+    "Zach Bruggeman <mail@bruggie.com>"
+  ],
   "license": "MIT",
   "dependencies": {
     "cli-update": "0.0.1",

@@ -89,6 +89,17 @@ Use the following key shortcuts to access different GitHub resources:
 ### Pull Requests
 ![](/screenshots/pull-requests.png)
 
+## Changelog
+
+### `1.1.0`
+ - Added two-factor authentication support (fixes [#4](https://github.com/IonicaBizau/cli-github/issues/4), see the [pull request](https://github.com/IonicaBizau/cli-github/pull/5). Thanks [@remixz](https://github.com/remixz)!.
+
+### `1.0.0`
+ - Initial stable release.
+
+### `1.0.0-betax`
+ - Unstable prereleases.
+
 ## How to contribute
 
 1. File an issue in the repository, using the bug tracker, describing the
