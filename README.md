@@ -91,6 +91,10 @@ Use the following key shortcuts to access different GitHub resources:
 
 ## Changelog
 
+### `1.2.0`
+ - Use 2FA token if it exists (fixes [#7](https://github.com/IonicaBizau/cli-github/issues/7), see the [pull request](https://github.com/IonicaBizau/cli-github/pull/5)).
+ - Fixed comment descriptions (issue comments, commit comments, [#9](https://github.com/IonicaBizau/cli-github/issues/9), [pull request](https://github.com/IonicaBizau/cli-github/pull/11))
+
 ### `1.1.0`
  - Added two-factor authentication support (fixes [#4](https://github.com/IonicaBizau/cli-github/issues/4), see the [pull request](https://github.com/IonicaBizau/cli-github/pull/5). Thanks [@remixz](https://github.com/remixz)!.
 
