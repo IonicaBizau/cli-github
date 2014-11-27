@@ -9,14 +9,22 @@ var Box = require("cli-box")
   , CliUpdate = require("cli-update")
   , Prompt = require("prompt")
   , Path = require("path")
+  , Config = require("../lib/conf")
   ;
 
 // Conigure prompt
+Config.prompt = Prompt;
 Prompt.start();
 Prompt.message = "";
 Prompt.delimiter = "";
 Prompt.colors = false;
 Keypress(process.stdin);
+
+// Frame handlers
+Config.frameHandlers = require("../lib/frame-handlers");
+
+// Attach GitHub object to Config
+Config._github = GitHub;
 
 // Override get method
 var oldGet = Prompt.get;
@@ -29,44 +37,20 @@ Prompt.get = function (schema, callback) {
 };
 
 // Configure CLI Update
+Config.cli.update = CliUpdate;
 CliUpdate.navigation = function (data) {
-    data && data.currentFrame && (CONFIG.currentFrame = data.currentFrame);
+    data && data.currentFrame && (Config.currentFrame = data.currentFrame);
 };
 
 CliUpdate.changed = function (output) {
-    CONFIG.cache._currentScreen = output;
+    Config.cache._currentScreen = output;
 };
 
-// Constants
-const HOME_DIRECTORY = process.env[
-    process.platform == "win32" ? "USERPROFILE" : "HOME"
-];
-
-// Set config
-global.CONFIG = {
-    root: Path.resolve(__dirname, "..")
-  , cli: {
-        w: process.stdout.columns || 212
-      , h: process.stdout.rows || 56
-      , update: CliUpdate
-    }
-  , _github: GitHub
-  , cache: {
-        avatars: {}
-    }
-  , promptRunning: false
-  , prompt: Prompt
-  , HOMDE_DIR: HOME_DIRECTORY
-  , CONFIG_PATH: HOME_DIRECTORY + "/.github-config.json"
-};
-
-// Initialize frame handlers
-CONFIG.frameHandlers = require("../lib/frame-handlers");
 
 // Set background box
-CONFIG.background = new Box({
-    w: CONFIG.cli.w
-  , h: CONFIG.cli.h - 3
+Config.background = new Box({
+    w: Config.cli.w
+  , h: Config.cli.h - 3
   , marks: {
         nw: "╔"
       , n:  "═"
@@ -81,12 +65,12 @@ CONFIG.background = new Box({
 });
 
 try {
-var conf = require(CONFIG.CONFIG_PATH);
+var conf = require(Config.CONFIG_PATH);
 } catch (e) {
     conf = {};
 }
 for (var key in conf) {
-    CONFIG[key] = conf[key];
+    Config[key] = conf[key];
 }
 
 // Initialize UI
@@ -112,7 +96,7 @@ SplashScreen.show(function (err, output) {
                 process.exit();
             }, 1000);
         }
-        CONFIG.user = user;
+        Config.user = user;
         SplashScreen.updateMessage("Logged in as: " + user.login + ". Fetching News Feed ...");
         MainStream();
     });
@@ -120,23 +104,23 @@ SplashScreen.show(function (err, output) {
 
 // Listen for the "keypress" event
 process.stdin.on("keypress", function (ch, key) {
-    if (CONFIG.promptRunning) {
+    if (Config.promptRunning) {
         return;
     }
     if (key && key.name === "c" && key.ctrl) {
         process.exit();
     }
-    var handlers = CONFIG.frameHandlers[CONFIG.currentFrame] || {};
+    var handlers = Config.frameHandlers[Config.currentFrame] || {};
     if (key && key.shift && typeof handlers[key.name.toUpperCase()] === "function") {
         handlers[key.name.toUpperCase()]();
     }
 
     if (key && key.shift && key.name === "left") {
-        CONFIG.cli.update.back();
+        Config.cli.update.back();
     }
 
     if (key && key.shift && key.name === "right") {
-        CONFIG.cli.update.next();
+        Config.cli.update.next();
     }
 });
 

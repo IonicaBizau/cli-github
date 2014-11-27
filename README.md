@@ -91,6 +91,12 @@ Use the following key shortcuts to access different GitHub resources:
 
 ## Changelog
 
+### [`1.3.0`](https://github.com/IonicaBizau/cli-github/pull/13)
+ - Moved config things in `/lib/conf/index.js`. Fixes [#2](https://github.com/IonicaBizau/cli-github/issues/2). Additional properties are appended on runtime.
+ - Moved the title and description in config.
+ - Fixed scopes for creating the repository
+ - A smarter way to handle tokens.
+
 ### `1.2.2`
  - Fixed docs.
 
