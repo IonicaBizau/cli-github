@@ -91,8 +91,11 @@ Use the following key shortcuts to access different GitHub resources:
 
 ## Changelog
 
+### `1.2.2`
+ - Fixed docs.
+
 ### `1.2.1`
- - Handle open source events (fixes [#10](https://github.com/IonicaBizau/cli-github/issues/10)).
+ - Handle open source events (fixes [#12](https://github.com/IonicaBizau/cli-github/issues/12)).
 
 ### `1.2.0`
  - Use 2FA token if it exists (fixes [#7](https://github.com/IonicaBizau/cli-github/issues/7), see the [pull request](https://github.com/IonicaBizau/cli-github/pull/5)).
