@@ -37,13 +37,13 @@
 ## Prerequisites
 
  - [NodeJS](http://nodejs.org/)
- - [ImageMagic](http://www.imagemagick.org/)
+ - [GraphicsMagick](http://www.graphicsmagick.org/)
 
    ```sh
    # Ubuntu
-   $ sudo apt-get install imagemagick
+   $ sudo apt-get install graphicsmagick
    # Mac OS X
-   $ brew install imagemagick
+   $ brew install graphicsmagick
    ```
 
 ## Installation
@@ -90,6 +90,9 @@ Use the following key shortcuts to access different GitHub resources:
 ![](/screenshots/pull-requests.png)
 
 ## Changelog
+### `1.5.1`
+ - Fixed docs.
+
 ### [`1.5.0`](https://github.com/IonicaBizau/cli-github/pull/15)
  - [cli-update@0.0.3](https://github.com/IonicaBizau/node-cli-update)
  - [overlap@1.3.0](https://github.com/IonicaBizau/overlap)
