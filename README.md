@@ -90,6 +90,11 @@ Use the following key shortcuts to access different GitHub resources:
 ![](/screenshots/pull-requests.png)
 
 ## Changelog
+### [`1.5.0`](https://github.com/IonicaBizau/cli-github/pull/15)
+ - [cli-update@0.0.3](https://github.com/IonicaBizau/node-cli-update)
+ - [overlap@1.3.0](https://github.com/IonicaBizau/overlap)
+ - [image-to-ascii@1.2.0](https://github.com/IonicaBizau/image-to-ascii)
+ - Fixes [#6](https://github.com/IonicaBizau/cli-github/issues/6).
 
 ### [`1.4.0`](https://github.com/IonicaBizau/cli-github/pull/14)
  - I rollbacked the manual event description computing from [#5](https://github.com/IonicaBizau/cli-github/pull/5), now using `<user>:<token>`.
