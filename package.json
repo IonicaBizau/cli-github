@@ -16,7 +16,7 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "cli-update": "0.0.1",
+    "cli-update": "0.0.3",
     "cli-box": "1.0.1",
     "github": "0.2.1",
     "le-table": "1.0.1",
