@@ -98,7 +98,11 @@ SplashScreen.show(function (err, output) {
         }
         Config.user = user;
         SplashScreen.updateMessage("Logged in as: " + user.login + ". Fetching News Feed ...");
-        MainStream();
+        MainStream(function (err) {
+          if (err) {
+            console.log(err);
+          }
+        });
     });
 });
 
