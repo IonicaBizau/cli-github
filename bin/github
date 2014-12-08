@@ -100,7 +100,7 @@ SplashScreen.show(function (err, output) {
         SplashScreen.updateMessage("Logged in as: " + user.login + ". Fetching News Feed ...");
         MainStream(function (err) {
           if (err) {
-            console.log(err);
+            throw err;
           }
         });
     });
