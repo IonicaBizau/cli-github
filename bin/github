@@ -49,8 +49,7 @@ CliUpdate.changed = function (output) {
 
 // Set background box
 Config.background = new Box({
-    w: Config.cli.w
-  , h: Config.cli.h - 3
+    fullscreen: true
   , marks: {
         nw: "╔"
       , n:  "═"
