@@ -100,42 +100,7 @@ Use the following key shortcuts to access different GitHub resources:
 ![](/screenshots/pull-requests.png)
 
 ## Changelog
-### `1.5.1`
- - Fixed docs.
-
-### [`1.5.0`](https://github.com/IonicaBizau/cli-github/pull/15)
- - [cli-update@0.0.3](https://github.com/IonicaBizau/node-cli-update)
- - [overlap@1.3.0](https://github.com/IonicaBizau/overlap)
- - [image-to-ascii@1.2.0](https://github.com/IonicaBizau/image-to-ascii)
- - Fixes [#6](https://github.com/IonicaBizau/cli-github/issues/6).
-
-### [`1.4.0`](https://github.com/IonicaBizau/cli-github/pull/14)
- - I rollbacked the manual event description computing from [#5](https://github.com/IonicaBizau/cli-github/pull/5), now using `<user>:<token>`.
-
-### [`1.3.0`](https://github.com/IonicaBizau/cli-github/pull/13)
- - Moved config things in `/lib/conf/index.js`. Fixes [#2](https://github.com/IonicaBizau/cli-github/issues/2). Additional properties are appended on runtime.
- - Moved the title and description in config.
- - Fixed scopes for creating the repository
- - A smarter way to handle tokens.
-
-### `1.2.2`
- - Fixed docs.
-
-### `1.2.1`
- - Handle open source events (fixes [#12](https://github.com/IonicaBizau/cli-github/issues/12)).
-
-### `1.2.0`
- - Use 2FA token if it exists (fixes [#7](https://github.com/IonicaBizau/cli-github/issues/7), see the [pull request](https://github.com/IonicaBizau/cli-github/pull/5)).
- - Fixed comment descriptions (issue comments, commit comments, [#9](https://github.com/IonicaBizau/cli-github/issues/9), [pull request](https://github.com/IonicaBizau/cli-github/pull/11))
-
-### `1.1.0`
- - Added two-factor authentication support (fixes [#4](https://github.com/IonicaBizau/cli-github/issues/4), see the [pull request](https://github.com/IonicaBizau/cli-github/pull/5). Thanks [@remixz](https://github.com/remixz)!.
-
-### `1.0.0`
- - Initial stable release.
-
-### `1.0.0-betax`
- - Unstable prereleases.
+See the [releases page](https://github.com/IonicaBizau/cli-github/releases).
 
 ## How to contribute
 
