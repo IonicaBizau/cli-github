@@ -60,12 +60,22 @@ $ github
 
 Use the following key shortcuts to access different GitHub resources:
 
+### News Feed
  - <kbd>SHIFT</kbd> + <kbd>C</kbd>: Create a new repository on GitHub.
  - <kbd>SHIFT</kbd> + <kbd>P</kbd>: Visit GitHub profiles (default: your GitHub profile).
  - <kbd>SHIFT</kbd> + <kbd>I</kbd>: View the open issues that are assigned to you.
  - <kbd>SHIFT</kbd> + <kbd>R</kbd>: View the open pull requests that created by you.
  - <kbd>SHIFT</kbd> + <kbd>←</kbd>: Go back in history
  - <kbd>SHIFT</kbd> + <kbd>→</kbd>: Go forth in history
+
+### Profile
+ - <kbd>SHIFT</kbd> + <kbd>R</kbd>: Fetch user's followers.
+ - <kbd>SHIFT</kbd> + <kbd>N</kbd>: Fetch user's following.
+ - <kbd>SHIFT</kbd> + <kbd>M</kbd>: Fetch the organization members.
+
+### User List
+ - <kbd>SHIFT</kbd> + <kbd>P</kbd>: Visit GitHub profiles (default: your GitHub profile).
+
 
 ## Screenshots
 
