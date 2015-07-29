@@ -42,6 +42,8 @@
    ```sh
    # Ubuntu
    $ sudo apt-get install graphicsmagick
+   # Fedora
+   $ sudo dnf install GraphicsMagick
    # Mac OS X
    $ brew install graphicsmagick
    ```
