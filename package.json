@@ -1,6 +1,6 @@
 {
   "name": "cli-github",
-  "version": "1.6.0",
+  "version": "1.7.0",
   "description": "A fancy GitHub client for command line.",
   "main": "github.js",
   "preferGlobal": "true",
@@ -10,11 +10,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Ionică Bizău <bizauionica@gmail.com>",
+  "author": "Ionică Bizău <bizauionica@gmail.com> (http://ionicabizau.net)",
   "contributors": [
     "Zach Bruggeman <mail@bruggie.com>"
   ],
-  "license": "MIT",
+  "license": "KINDLY",
   "dependencies": {
     "cli-update": "1.0.0",
     "cli-box": "2.1.1",
@@ -43,5 +43,173 @@
   "bugs": {
     "url": "https://github.com/IonicaBizau/cli-github/issues"
   },
-  "homepage": "https://github.com/IonicaBizau/cli-github"
+  "homepage": "https://github.com/IonicaBizau/cli-github",
+  "blah": {
+    "before_title": [
+      {
+        "code": {
+          "content": [
+            "                                        CLI GitHub",
+            "                          A fancy GitHub client for command line.",
+            "",
+            "                                    ..    ..::..    ..",
+            "                                  ..  ,,LLCCCCCCLL,,  ..",
+            "                                    ,,CCCCCCCCCCCCCC,,",
+            "                                    LLCC,,iiiiii,,CCLL",
+            "                                  ,,CCCC          CCCC,,",
+            "                                  ::CCLL  ......  ffCC::",
+            "                                  ,,CCCC    ..    CCCC,,",
+            "                                    CCCCLLii  ;;LLCCCC",
+            "                                    ;;CCffii  ttCCCC;;",
+            "                                  ..  ;;CC11  11CC;;  ..",
+            "                                    ..  ....  ....  ..",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "             :1ffftti,                .:::.    ,:::              :::,",
+            "           tCCCCCCCCCL  fCCf   .... . 1CCC1    LCCC,            ,CCCL .",
+            "          LCCCCLtttfL; .CCCC. ,CCCf . 1CCCt .. CCCC,            ,CCCL",
+            "         1CCCC.         ;ff;  ;CCCL,; 1CCC1    LCCC..;:;.  .;:;.,CCCL,i11;",
+            "         LCCC;  ;iiiii, CCCC.CCCCCCCC:iCCCCLLLLCCCC tCCCi  tCCCi.CCCCCCCCCC;",
+            "         LCCC:  CCCCCCf CCCC fLCCCCff.1CCCCCCCCCCCC tCCCi  tCCCi.CCCC1itCCCC",
+            "         LCCC;  tfLCCCt CCCC  ,CCCL . 1CCCf:;;:CCCC tCCCi  tCCCi.CCCL . LCCC:",
+            "         iCCCC.   iCCCt CCCC  :CCCL . 1CCC1    LCCC tCCCi  1CCCi.CCCL . LCCC:",
+            "          LCCCCLffLCCCf CCCC  .CCCCi1 1CCC1 .  CCCC tCCCLi1LCCCi.CCCC1itCCCC",
+            "           1CCCCCCCCCC1 CCCC   tCCCCC;iCCC1    LCCC..CCCCCCCCCCi.CCCCCCCCCC:",
+            "             .;1tt1i:   :;;:    ,i11i..;;;.    :;;;   :1t1i,.;;. ;;:.;111;"
+          ]
+        }
+      }
+    ],
+    "installation": [
+      {
+        "h2": "Prerequisites"
+      },
+      {
+        "ul": [
+          "[NodeJS](http://nodejs.org/)",
+          [
+            "[GraphicsMagick](http://www.graphicsmagick.org/)",
+            {
+              "code": {
+                "language": "sh",
+                "content": [
+                  "# Ubuntu",
+                  "$ sudo apt-get install graphicsmagick",
+                  "# Fedora",
+                  "$ sudo dnf install GraphicsMagick",
+                  "# Mac OS X",
+                  "$ brew install graphicsmagick"
+                ]
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "h2": "Usage"
+      },
+      {
+        "code": {
+          "content": "$ github"
+        }
+      },
+      {
+        "p": "Use the following key shortcuts to access different GitHub resources:"
+      },
+      {
+        "h3": "News Feed"
+      },
+      {
+        "ul": [
+          "<kbd>SHIFT</kbd> + <kbd>C</kbd>: Create a new repository on GitHub.",
+          "<kbd>SHIFT</kbd> + <kbd>P</kbd>: Visit GitHub profiles (default: your GitHub profile).",
+          "<kbd>SHIFT</kbd> + <kbd>I</kbd>: View the open issues that are assigned to you.",
+          "<kbd>SHIFT</kbd> + <kbd>R</kbd>: View the open pull requests that created by you.",
+          "<kbd>SHIFT</kbd> + <kbd>←</kbd>: Go back in history",
+          "<kbd>SHIFT</kbd> + <kbd>→</kbd>: Go forth in history"
+        ]
+      },
+      {
+        "h3": "Profile"
+      },
+      {
+        "ul": [
+          "<kbd>SHIFT</kbd> + <kbd>R</kbd>: Fetch user's followers.",
+          "<kbd>SHIFT</kbd> + <kbd>N</kbd>: Fetch user's following.",
+          "<kbd>SHIFT</kbd> + <kbd>M</kbd>: Fetch the organization members."
+        ]
+      },
+      {
+        "h3": "User List"
+      },
+      {
+        "ul": [
+          "<kbd>SHIFT</kbd> + <kbd>P</kbd>: Visit GitHub profiles (default: your GitHub profile)."
+        ]
+      },
+      {
+        "h2": "Screenshots"
+      },
+      {
+        "h3": "Splashscreen"
+      },
+      {
+        "img": {
+          "source": "/screenshots/splashscreen.png",
+          "title": ""
+        }
+      },
+      {
+        "h3": "News Feed"
+      },
+      {
+        "img": {
+          "source": "/screenshots/news-feed.png",
+          "title": ""
+        }
+      },
+      {
+        "h3": "Create repository"
+      },
+      {
+        "img": {
+          "source": "/screenshots/create-repo.png",
+          "title": ""
+        }
+      },
+      {
+        "h3": "Profile"
+      },
+      {
+        "img": {
+          "source": "/screenshots/profile.png",
+          "title": ""
+        }
+      },
+      {
+        "h3": "Issues"
+      },
+      {
+        "img": {
+          "source": "/screenshots/issues.png",
+          "title": ""
+        }
+      },
+      {
+        "h3": "Pull Requests"
+      },
+      {
+        "img": {
+          "source": "/screenshots/pull-requests.png",
+          "title": ""
+        }
+      }
+    ],
+    "license_year": "2014\n"
+  }
 }

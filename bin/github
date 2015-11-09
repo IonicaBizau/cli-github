@@ -12,6 +12,11 @@ var Box = require("cli-box")
   , Config = require("../lib/conf")
   ;
 
+// Help output
+if (~process.argv.indexOf("-h") || ~process.argv.indexOf("--help")) {
+    return console.log("Usage: cli-github");
+}
+
 // Conigure prompt
 Config.prompt = Prompt;
 Prompt.start();
