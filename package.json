@@ -1,8 +1,8 @@
 {
   "name": "cli-github",
-  "version": "1.8.1",
+  "version": "1.8.2",
   "description": "A fancy GitHub client for command line.",
-  "main": "github.js",
+  "main": "lib/index.js",
   "preferGlobal": "true",
   "bin": {
     "github": "./bin/github"
@@ -211,5 +211,16 @@
       }
     ],
     "license_year": "2014\n"
-  }
+  },
+  "files": [
+    "bin/",
+    "app/",
+    "lib/",
+    "dist/",
+    "src/",
+    "resources/",
+    "menu/",
+    "cli.js",
+    "index.js"
+  ]
 }

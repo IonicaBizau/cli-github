@@ -1,3 +1,4 @@
+
 ```
                                         CLI GitHub
                           A fancy GitHub client for command line.
@@ -13,6 +14,12 @@
                                     ;;CCffii  ttCCCC;;
                                   ..  ;;CC11  11CC;;  ..
                                     ..  ....  ....  ..
+
+
+
+
+
+
 
              :1ffftti,                .:::.    ,:::              :::,
            tCCCCCCCCCL  fCCf   .... . 1CCC1    LCCC,            ,CCCL .
@@ -89,10 +96,12 @@ Use the following key shortcuts to access different GitHub resources:
 ### Pull Requests
 ![](/screenshots/pull-requests.png)
 
-## How to contribute
+
+## :yum: How to contribute
 Have an idea? Found a bug? See [how to contribute][contributing].
 
-## License
+
+## :scroll: License
 
 [MIT][license] © [Ionică Bizău][website]
 
