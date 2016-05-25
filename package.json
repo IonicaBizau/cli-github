@@ -1,6 +1,6 @@
 {
   "name": "cli-github",
-  "version": "1.8.2",
+  "version": "1.8.3",
   "description": "A fancy GitHub client for command line.",
   "main": "lib/index.js",
   "preferGlobal": "true",
@@ -220,6 +220,7 @@
     "src/",
     "resources/",
     "menu/",
+    "scripts/",
     "cli.js",
     "index.js"
   ]
