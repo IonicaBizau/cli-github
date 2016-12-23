@@ -113,6 +113,14 @@
         ]
       },
       {
+        "h2": "Installation"
+      },
+      {
+        "code": {
+          "content": "$ npm i -g cli-github"
+        }
+      },
+      {
         "h2": "Usage"
       },
       {
