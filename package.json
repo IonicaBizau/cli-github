@@ -1,6 +1,6 @@
 {
   "name": "cli-github",
-  "version": "1.8.6",
+  "version": "1.8.7",
   "description": "A fancy GitHub client for command line.",
   "main": "lib/index.js",
   "preferGlobal": "true",
@@ -95,6 +95,7 @@
           "[NodeJS](http://nodejs.org/)",
           [
             "[GraphicsMagick](http://www.graphicsmagick.org/)",
+            "",
             {
               "code": {
                 "language": "sh",

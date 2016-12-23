@@ -44,6 +44,7 @@
 
  - [NodeJS](http://nodejs.org/)
  - [GraphicsMagick](http://www.graphicsmagick.org/)
+
     ```sh
     # Ubuntu
     $ sudo apt-get install graphicsmagick
