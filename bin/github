@@ -7,7 +7,7 @@ var Box = require("cli-box")
   , Login = require("../lib/api/login")
   , Keypress = require("keypress")
   , CliUpdate = require("cli-update")
-  , Prompt = require("prompt")
+  , Prompt = require("promptify")
   , Path = require("path")
   , Config = require("../lib/conf")
   ;
@@ -19,10 +19,6 @@ if (~process.argv.indexOf("-h") || ~process.argv.indexOf("--help")) {
 
 // Conigure prompt
 Config.prompt = Prompt;
-Prompt.start();
-Prompt.message = "";
-Prompt.delimiter = "";
-Prompt.colors = false;
 Keypress(process.stdin);
 
 // Frame handlers
@@ -30,16 +26,6 @@ Config.frameHandlers = require("../lib/frame-handlers");
 
 // Attach GitHub object to Config
 Config._github = GitHub;
-
-// Override get method
-var oldGet = Prompt.get;
-Prompt.get = function (schema, callback) {
-    oldGet.call(this, schema, function () {
-        process.stdin.setRawMode(true);
-        process.stdin.resume();
-        callback.apply(this, arguments);
-    });
-};
 
 // Configure CLI Update
 Config.cli.update = CliUpdate;
