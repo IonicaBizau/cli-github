@@ -19,6 +19,7 @@ if (~process.argv.indexOf("-h") || ~process.argv.indexOf("--help")) {
 
 // Conigure prompt
 Config.prompt = Prompt;
+Config.coloredImages = process.argv.includes("--colored-images");
 Keypress(process.stdin);
 
 // Frame handlers
@@ -39,7 +40,7 @@ CliUpdate.changed = function (output) {
 
 
 // Set background box
-Config.background = new Box({
+Config.background = Box({
     fullscreen: true
   , marks: {
         nw: "╔"
