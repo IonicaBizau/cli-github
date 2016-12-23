@@ -14,7 +14,7 @@ var Box = require("cli-box")
 
 // Help output
 if (~process.argv.indexOf("-h") || ~process.argv.indexOf("--help")) {
-    return console.log("Usage: cli-github");
+    return console.log("Usage: github");
 }
 
 // Conigure prompt
