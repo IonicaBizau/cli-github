@@ -54,6 +54,10 @@
     $ brew install graphicsmagick
     ```
 
+## Installation
+```
+$ npm i -g cli-github
+```
 ## Usage
 ```
 $ github
