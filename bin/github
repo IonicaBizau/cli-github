@@ -19,7 +19,7 @@ if (~process.argv.indexOf("-h") || ~process.argv.indexOf("--help")) {
 
 // Conigure prompt
 Config.prompt = Prompt;
-Config.coloredImages = process.argv.includes("--colored-images");
+Config.coloredImages = !!~process.argv.indexOf("--colored-images");
 Keypress(process.stdin);
 
 // Frame handlers
