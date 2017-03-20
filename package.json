@@ -1,6 +1,6 @@
 {
   "name": "cli-github",
-  "version": "1.8.9",
+  "version": "1.8.10",
   "description": "A fancy GitHub client for command line.",
   "main": "lib/index.js",
   "preferGlobal": "true",
@@ -10,7 +10,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Ionică Bizău <bizauionica@gmail.com> (http://ionicabizau.net)",
+  "author": "Ionică Bizău <bizauionica@gmail.com> (https://ionicabizau.net)",
   "contributors": [
     "Zach Bruggeman <mail@bruggie.com>"
   ],
@@ -226,12 +226,11 @@
     "bin/",
     "app/",
     "lib/",
-    "build/",
     "dist/",
     "src/",
+    "scripts/",
     "resources/",
     "menu/",
-    "scripts/",
     "cli.js",
     "index.js"
   ]
