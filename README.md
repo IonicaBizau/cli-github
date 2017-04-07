@@ -74,6 +74,16 @@ Use the following key shortcuts to access different GitHub resources:
  - <kbd>SHIFT</kbd> + <kbd>←</kbd>: Go back in history
  - <kbd>SHIFT</kbd> + <kbd>→</kbd>: Go forth in history
 
+### Clone Sub Repository
+
+This is just an alternative way to download / clone git repository only sub-directory not whole of repository.
+
+<code>$ downtree [Tree Repo]</code>
+
+Ex:
+
+<code>$ downtree IonicaBizau/cli-github/tree/master/screenshots</code>
+
 ### Profile
 
  - <kbd>SHIFT</kbd> + <kbd>R</kbd>: Fetch user's followers.
