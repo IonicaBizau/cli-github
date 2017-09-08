@@ -36,7 +36,6 @@
              .;1tt1i:   :;;:    ,i11i..;;;.    :;;;   :1t1i,.;;. ;;:.;111;
 ```
 
-
 # `$ cli-github`
 
  [![Support me on Patreon][badge_patreon]][patreon] [![Buy me a book][badge_amazon]][amazon] [![PayPal][badge_paypal_donate]][paypal-donations] [![Ask me anything](https://img.shields.io/badge/ask%20me-anything-1abc9c.svg)](https://github.com/IonicaBizau/ama) [![Version](https://img.shields.io/npm/v/cli-github.svg)](https://www.npmjs.com/package/cli-github) [![Downloads](https://img.shields.io/npm/dt/cli-github.svg)](https://www.npmjs.com/package/cli-github)
@@ -44,7 +43,6 @@
 > A fancy GitHub client for command line.
 
 ## Prerequisites
-
 
  - [NodeJS](http://nodejs.org/)
  - [GraphicsMagick](http://www.graphicsmagick.org/)
@@ -58,24 +56,18 @@
     $ brew install graphicsmagick
     ```
 
-
 ## Installation
-
 ```
 $ npm i -g cli-github
 ```
-
 ## Usage
-
 ```
 $ github
 ```
 
-
 Use the following key shortcuts to access different GitHub resources:
 
 ### News Feed
-
 
  - <kbd>SHIFT</kbd> + <kbd>C</kbd>: Create a new repository on GitHub.
  - <kbd>SHIFT</kbd> + <kbd>P</kbd>: Visit GitHub profiles (default: your GitHub profile).
@@ -86,40 +78,31 @@ Use the following key shortcuts to access different GitHub resources:
 
 ### Profile
 
-
  - <kbd>SHIFT</kbd> + <kbd>R</kbd>: Fetch user's followers.
  - <kbd>SHIFT</kbd> + <kbd>N</kbd>: Fetch user's following.
  - <kbd>SHIFT</kbd> + <kbd>M</kbd>: Fetch the organization members.
 
 ### User List
 
-
  - <kbd>SHIFT</kbd> + <kbd>P</kbd>: Visit GitHub profiles (default: your GitHub profile).
 
 ## Screenshots
-
 ### Splashscreen
-
 ![](/screenshots/splashscreen.png)
 
 ### News Feed
-
 ![](/screenshots/news-feed.png)
 
 ### Create repository
-
 ![](/screenshots/create-repo.png)
 
 ### Profile
-
 ![](/screenshots/profile.png)
 
 ### Issues
-
 ![](/screenshots/issues.png)
 
 ### Pull Requests
-
 ![](/screenshots/pull-requests.png)
 
 
