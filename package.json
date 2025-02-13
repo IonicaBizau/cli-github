@@ -1,6 +1,6 @@
 {
   "name": "cli-github",
-  "version": "1.8.18",
+  "version": "1.8.19",
   "description": "A fancy GitHub client for command line.",
   "main": "lib/index.js",
   "preferGlobal": "true",
@@ -233,6 +233,8 @@
     "menu/",
     "cli.js",
     "index.js",
+    "index.d.ts",
+    "package-lock.json",
     "bloggify.js",
     "bloggify.json",
     "bloggify/"
